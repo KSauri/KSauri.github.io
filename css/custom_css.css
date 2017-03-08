@@ -1,0 +1,136 @@
+.project-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-name-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.project-name-h2 {
+  color: white;
+}
+
+.bg-primary {
+  background-color: #222E50;
+}
+
+.bg-dark {
+  background-color: #222E50;
+}
+
+.popup-gallery {
+  background-color: #222E50;
+
+
+}
+
+.btn-primary {
+  background-color: #222E50;
+}
+
+.text-primary {
+  color: #222E50;
+}
+
+.my-name {
+    color: #222E50;
+}
+
+i {
+  color: #222E50;
+}
+
+a:hover {
+  color: #222E50;
+}
+
+.my-email {
+  color: #222E50;
+}
+
+@media (min-width: 1200px) {
+    .project-desc {
+        display: none;
+    }
+}
+
+hr {
+  border-color: #222E50;
+}
+
+/*.flight-mapper:hover {
+  color: white;
+}*/
+
+.flight-mapper {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+    .popup-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project-btn {
+  margin: 0px 5px;
+}
+
+.header-content-inner p {
+  color: rgba(255,255,255,.8);
+}
+
+@media (max-width: 770px) {
+  .flex-row {
+    flex-direction: column;
+    align-content:center;
+  }
+}
+
+.flex-row {
+  display: flex;
+}
+
+.portrait {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.portfolio-box .portfolio-box-caption {
+  background: rgba(92, 116, 87, 0.9) ;
+}
+
+.navbar-default .nav>li.active>a, .navbar-default .nav>li.active>a:focus {
+  color: rgba(92, 116, 87, 0.8) !important;
+}
+
+.skillz:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.social-media {
+  color: white;
+  font-size: 60px;
+  margin: 0px 14px;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-description {
+  padding: 0px 3px;
+}
+
+.about-me {
+  color: white !important;
+}

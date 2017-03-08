@@ -24,7 +24,8 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/custom_css.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +45,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Kyle Sauri</a>
+                <a class="navbar-brand page-scroll my-name" href="#page-top">Kyle Sauri</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,7 +75,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Kyle Sauri - Software Developer</h1>
                 <hr>
-                <p>I'm a NYC based developer.  I enjoy picking up new technologies, wrangling data, and building cool things.</p>
+                <p class="about-me">I'm a NYC based developer.  I enjoy picking up new technologies, wrangling data, and building cool things.</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -84,11 +85,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">A little about me</h2>
-                    <hr class="light">
-                    <p class="text-faded">Whether its handrolling a React component, structuring CSS that catches the eye, or putting together a custom visualization with a mix of JS and Python, I've taken on the project and picked up the necessary tools.  I'm looking for challenging projects that need quality code.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Skills</a>
-                </div>
+                    <div class="flex-row">
+                      <div>
+                        <img class="portrait" src="img/self-portrait.png" />
+                      </div>
+                      <div>
+                        <h2 class="section-heading">A little about me</h2>
+                        <hr class="light">
+                        <p class="text-faded">Whether its handrolling a React component, structuring CSS that catches the eye, or putting together a custom visualization with a mix of JS and Python, I've taken on the task and picked up the necessary tools.  I'm looking for challenging projects that need quality code.</p>
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button skillz">Skills</a>
+                      </div>
+                    </div>
+              </div>
             </div>
         </div>
     </section>
@@ -183,9 +191,16 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/tbili.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/tbiliTN.png" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-6 project-cont">
+                  <div class="call-to-action project-name-cont">
+                    <h2 class="project-name-h2">Tbili</h2>
+                    <div>
+                      <a href="tbili.co" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
+                      <a href="https://github.com/KSauri/Tbili" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
+                    </div>
+                  </div>
+                    <a href="tbili.co" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/tbiliTN.png" class="img-responsive tn" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -195,40 +210,57 @@
                                     Tbili
                                 </div>
                                 <div>
-                                  <p>Here is where I'll put the description of Tbili.  For now, I'm just seeing how it looks when I write a whole bunch of stuff.</p>
+                                  <p class="project-description">Inspired by Airbnb, Tbili is a fullstack single page app.  It leverages Google's Geocoder and Maps APIs to allow users to create and show new rentals.  It heavily incorporates React and Redux, to allow each component access to the state of the app while generating deterministic app renders.</p>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                  <div class="call-to-action project-name-cont">
+                    <h2 class="project-name-h2 flight-mapper">FlightMapper</h2>
+                    <div>
+                      <a href="flightmapper.us" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
+                      <a href="https://github.com/KSauri/FlightMap" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
+                    </div>
+                  </div>
+                    <a class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/flightMapperTN.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Algo Visualization
+                                    Algorithm Visualization
                                 </div>
                                 <div class="project-name">
                                     FlightMapper
                                 </div>
                                 <div>
-                                  <p>Here is the description for FlightMapper which I have yet to write</p>
+                                  <p class="project-description">FlightMapper is a visualization of the A* path-finding algorithm.  Using map data on the 250 largest airports in the US, it demonstrates exhaustive search as well as the efficiency of A*.  It uses plain JavaScript and cascading callback functions to illustrate paths checked by the algorithm.</p>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                    <div class="call-to-action project-name-cont">
+                      <h2 class="project-name-h2">theRocks</h2>
+                      <div>
+                        <a href="" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
+                        <a href="https://github.com/KSauri/theRocks" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
+                      </div>
+                  </div>
+                    <a class="portfolio-box">
                         <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    MVC Framework
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    theRocks
+                                </div>
+                                <div>
+                                  <p class="project-description">theRocks is an MVC framework similar to Ruby's Rails.  It allows users to easily generate RESTful routes. Similar to Rails, it uses syntactic shortcuts to quickly connect views to their respective controllers.</p>
                                 </div>
                             </div>
                         </div>
@@ -238,28 +270,13 @@
         </div>
     </section>
     <aside class="bg-dark">
-      <div class="flex-row" >
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Tbili</h2>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
-            </div>
-        </div>
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>FlightMapper</h2>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
-            </div>
-        </div>
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>theRocks</h2>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Live Site</a>
-                <a href="" class="btn btn-default btn-xl sr-button project-btn">Source Code</a>
-            </div>
-        </div>
+      <div class="flex-column">
+
+      <div class="social-media-container" >
+          <a href="https://github.com/KSauri"><i class="fa fa-github social-media" aria-hidden="true"></i></a>
+          <a href="https://angel.co/kyle-sauri"<i class="fa fa-angellist social-media" aria-hidden="true"></i>
+          <a href="https://linkedin.com/in/kyle-sauri-1b673831"><i class="fa fa-linkedin social-media" aria-hidden="true"></i></a>
+      </div>
       </div>
     </aside>
 
@@ -267,9 +284,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Contact Info</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Give me a call or send me an email!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
@@ -277,7 +294,7 @@
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="kylesauri@gmail.com">kylesauri@gmail.com</a></p>
+                    <p><a class="my-email" href="mailto:kylesauri@gmail.com">kylesauri@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -300,3 +317,11 @@
 </body>
 
 </html>
+
+<!-- <div>
+
+</div> -->
+
+<!-- -->
+
+        <!-- <div class="container text-center"> -->
